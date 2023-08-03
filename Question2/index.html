@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Three-Column Layout</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+
+    .left-column {
+      width: 20%;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    .center-column {
+      width: 60%;
+      padding: 20px;
+    }
+
+    .right-column {
+      width: 20%;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="left-column">
+      <h2>Contents</h2>
+      <ul>
+        <li><a href="#section1">Intro</a></li>
+        <li><a href="#section2">Audio</a></li>
+        <li><a href="#section3">Video</a></li>
+      </ul>
+    </div>
+
+    <div class="center-column">
+
+      <h1 id="section1">Intro</h1>
+      <P>
+        Use frames such that page is divided into 3 frames 20% on left to show contents of pages,
+        60% in center to show body of page, remaining on right to show remarks. Embed Audio
+        and Video into your HTML web page.
+      </P>
+
+      <h1 id="section2">Audio</h1>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/jump.ogg" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <h1 id="section3">Video</h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oN8aS_HW4k8" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+    </div>
+
+    <div class="right-column">
+      <h2>Remarks</h2>
+      <p>Audio Contains a Jump Sound Effect</p>
+      <p>Video is about HTML IFrame</p>
+    </div>
+  </div>
+
+</body>
+
+</html>
